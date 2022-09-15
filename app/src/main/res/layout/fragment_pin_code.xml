@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pin.PinCodeFragment">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createPinButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Create pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/enterPinButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enterPinButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Enter pin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createPinButton"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/authByBiometry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Авторизация по биометрии"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPinButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
